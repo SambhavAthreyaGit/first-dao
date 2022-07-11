@@ -10,7 +10,7 @@ const token = sdk.getToken("0x4267CaE9e090edAC66eF5FC151Fb057824Cd07BB");
 (async () => {
   try {
     // Create proposal to mint 420,000 new token to the treasury.
-    const amount = 420_000;
+    const amount = 400_000;
     const description = "Should the DAO mint an additional " + amount + " tokens into the treasury?";
     const executions = [
       {
@@ -43,9 +43,9 @@ const token = sdk.getToken("0x4267CaE9e090edAC66eF5FC151Fb057824Cd07BB");
 
   try {
     // Create proposal to transfer ourselves 6,900 tokens for being awesome.
-    const amount = 6_900;
+    const amount = 1_800;
     const description = "Should the DAO transfer " + amount + " tokens from the treasury to " +
-      process.env.WALLET_ADDRESS + " for being awesome?";
+      process.env.WALLET_ADDRESS + " for their amazing piano arrangement?";
     const executions = [
       {
         // Again, we're sending ourselves 0 ETH. Just sending our own token.
